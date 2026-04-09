@@ -17,9 +17,9 @@ console.log(fila.print())
 
 // quem será atendido
 let proximo = fila.peek()
-console.log({proximo})
+console.log({ proximo })
 
 // remoção da fila
 let atendido = fila.dequeue()
-console.log({atendido})
+console.log({ atendido })
 console.log(fila.print())

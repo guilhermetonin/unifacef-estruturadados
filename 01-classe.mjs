@@ -2,56 +2,56 @@
 // class - define a estrutura de dados e os seus métodos 
 // que cada instância vai ter ao ser criada
 class FormaGeometrica {
-  // # - define atributos privados 
-  // não podem ser lidos ou alterados de fora da classe
-  #base;
-  #altura;
-  #tipo;
+    // # - define atributos privados 
+    // não podem ser lidos ou alterados de fora da classe
+    #base;
+    #altura;
+    #tipo;
 
-  // getter - método que permite a leitura de um atributo privado (#)
-  get base() {
-    return this.#base;
-  }
-  get altura() {
-    return this.#altura;
-  }
-  get tipo() {
-    return this.#tipo;
-  }
+    // getter - método que permite a leitura de um atributo privado (#)
+    get base() {
+        return this.#base;
+    }
+    get altura() {
+        return this.#altura;
+    }
+    get tipo() {
+        return this.#tipo;
+    }
 
-  // setter - método que permite a alteração de um atributo privado (#)
-  set base(valor) {
-    if (typeof valor !== "number" || valor <= 0) {
-      throw new Error("ERRO: a base precisa ser numérica e maior que zero.");
+    // setter - método que permite a alteração de um atributo privado (#)
+    set base(valor) {
+        if (typeof valor !== "number" || valor <= 0) {
+            throw new Error("ERRO: a base precisa ser numérica e maior que zero.");
+        }
+        this.#base = valor;
     }
-    this.#base = valor;
-  }
-  set altura(valor) {
-    if (typeof valor !== "number" || valor <= 0) {
-      throw new Error("ERRO: a altura precisa ser numérica e maior que zero.");
+    set altura(valor) {
+        if (typeof valor !== "number" || valor <= 0) {
+            throw new Error("ERRO: a altura precisa ser numérica e maior que zero.");
+        }
+        this.#altura = valor;
     }
-    this.#altura = valor;
-  }
 
-  set tipo(valor) {
-    if (!["R", "T", "E"].includes(valor.toUpperCase())) {
-      throw new Error("ERRO: o tipo precisa ser um dos valores: R, T ou E.");
-      // o erro interrompe o método
+    set tipo(valor) {
+        if (!["R", "T", "E"].includes(valor.toUpperCase())) {
+            throw new Error("ERRO: o tipo precisa ser um dos valores: R, T ou E.");
+            // o erro interrompe o método
+        }
+        // passou na validação
+        this.#tipo = valor.toUpperCase();
     }
-    // passou na validação
-    this.#tipo = valor.toUpperCase();
-  }
 
-  calcArea(){
-    switch(this.#tipo) {
-        case "R":
-            return this.#base * this.#altura
-        case "T":
-            return (this.#base * this.#altura) / 2
-        case "E":
-            return (this.#base / 2) * (this.#altura / 2) * Math.PI
+    calcArea() {
+        switch (this.#tipo) {
+            case "R":
+                return this.#base * this.#altura
+            case "T":
+                return (this.#base * this.#altura) / 2
+            case "E":
+                return (this.#base / 2) * (this.#altura / 2) * Math.PI
+        }
     }
-  }
 }
 
 let forma1 = new FormaGeometrica()
