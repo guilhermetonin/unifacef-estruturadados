@@ -1,7 +1,7 @@
 // FILA usa o conceito de FIFO (First In, First Out)
 // Primeiro a entrar -> Primeiro a sair
 
-import Queue from "./lib/Queue.mjs"
+import Queue from "../lib/Queue.mjs"
 
 let fila = new Queue()
 console.log(fila.print())

@@ -1,4 +1,4 @@
-import Stack from "./lib/Stack.mjs"
+import Stack from "../lib/Stack.mjs"
 
 let frase = "Socorram-me, subi no ônibus em Marrocos"
 

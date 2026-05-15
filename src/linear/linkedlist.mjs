@@ -1,4 +1,4 @@
-import LinkedList from "./lib/LinkedList.mjs";
+import LinkedList from "../lib/LinkedList.mjs";
 
 // cria uma instância da LinkedList
 const lista = new LinkedList()

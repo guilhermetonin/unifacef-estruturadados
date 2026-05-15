@@ -1,4 +1,4 @@
-import DoublyLinkedList from "./lib/DoublyLinkedList.mjs";
+import DoublyLinkedList from "../lib/DoublyLinkedList.mjs";
 
 // cria uma instância da DoublyLinkedList
 const lista = new DoublyLinkedList()

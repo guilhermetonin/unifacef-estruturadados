@@ -1,4 +1,4 @@
-import Stack from "./lib/Stack.mjs"
+import Stack from "../lib/Stack.mjs"
 // PILHA usa o conceito de LIFO (Last In, First Out)
 // Último a entrar -> Primeiro a sair
 

@@ -1,4 +1,4 @@
-import Deque from "./lib/Deque.mjs";
+import Deque from "../lib/Deque.mjs";
 // DEQUE permite adicionar elementos no ínicio e no final
 
 let listaCompras = new Deque()
